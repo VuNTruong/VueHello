@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  background: url("./images/stock-photo-top-view-colorful-toy-shopping.jfif");
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.container__item {
+  margin: 10px;
+  background-color: #ebedeb;
+  border-radius: 5px;
+  padding-left: 20px;
+  width: 50%;
+}
+
+.container__item__title {
+  font-weight: bold;
+  font-size: large;
+}
+
+.container__item__button {
+  background-color: #d2d2e2;
+  height: 30px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.container__item__button:hover {
+  background-color: darkgray;
+}
+
+.container__feedback-form {
+  margin-top: 50px;
+  width: 50%;
+  background-color: #ebedeb;
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.container__feedback-form__feedback-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container__feedback-form__feedback-item__label {
+  display: flex;
+  margin-right: 10px;
+  justify-content: flex-start;
+  font-weight: bold;
+  width: 100px;
+}
+
+.container__feedback-form__feedback-item__input {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 24px;
+  border-radius: 12px;
+  border-style: none;
+  padding: 5px;
+}
+
+.container__feedback-form__feedback-item__input--high {
+  height: 70px;
+}
+
+.container__feedback-form__submit-button {
+  background-color: darkgray;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 30px;
+  border-style: none;
+}

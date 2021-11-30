@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <!-- This is the parent component -->
+    <div class="container" id="container" @send-form="receiveFormData">
+      <h1>Shopping list</h1>
+
+      <!-- List of shopping items -->
+      <!-- This is the child component -->
+      <todo-item
+        v-for="item in groceryList"
+        :todo="item"
+        :shopping-cart="cart"
+        v-bind:key="item.id"
+      ></todo-item>
+
+      <!-- Feedback form -->
+      <!-- This is the child component -->
+      <feedback-form
+      ></feedback-form>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script type="module" src="main.js"></script>
+</html>
