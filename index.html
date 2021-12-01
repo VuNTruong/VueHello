@@ -8,7 +8,7 @@
   <body>
     <!-- Main container -->
     <!-- This is the parent component -->
-    <div class="container" id="container" @send-form="receiveFormData">
+    <div class="container" id="container">
       <h1>Shopping list</h1>
 
       <!-- List of shopping items -->
@@ -18,12 +18,12 @@
         :todo="item"
         :shopping-cart="cart"
         v-bind:key="item.id"
+        @update-item="updateItem"
       ></todo-item>
 
       <!-- Feedback form -->
       <!-- This is the child component -->
-      <feedback-form
-      ></feedback-form>
+      <feedback-form @send-form="updateFormData"></feedback-form>
     </div>
   </body>
   <script src="https://unpkg.com/vue@next"></script>

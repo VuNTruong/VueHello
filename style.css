@@ -2,12 +2,18 @@ body {
   font-family: sans-serif;
 }
 
+.main {
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   background: url("./images/stock-photo-top-view-colorful-toy-shopping.jfif");
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  height: 100%;
 }
 
 .container__item {
@@ -30,6 +36,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .container__item__button:hover {
